@@ -1,0 +1,24 @@
+/****** General *******/
+@media screen {
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #F3F3F3;
+    --first-button-color: #9356DC;
+    --second-button-color: #FF79DA;
+    --new-color: #99E2D0;
+    --new-text-color:#008766;
+    --footer-color: #353535;
+}
+
+.fa-solid {
+    color: var(--footer-color);
+}
+
+.titre{
+    font-family: 'Shrikhand', cursive;
+}

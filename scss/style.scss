@@ -1,24 +1,54 @@
 /****** General *******/
-@media screen {
-    
-}
-body{
-    font-family: 'Roboto', sans-serif;
-}
+@media (max-width: 375px) {
 
-:root {
-    --main-color: #F3F3F3;
-    --first-button-color: #9356DC;
-    --second-button-color: #FF79DA;
-    --new-color: #99E2D0;
-    --new-text-color:#008766;
-    --footer-color: #353535;
-}
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
 
-.fa-solid {
-    color: var(--footer-color);
-}
+    :root {
+        --main-color: #F3F3F3;
+        --first-button-color: #9356DC;
+        --second-button-color: #FF79DA;
+        --new-color: #99E2D0;
+        --new-text-color:#008766;
+        --footer-color: #353535;
+    }
 
-.titre{
-    font-family: 'Shrikhand', cursive;
+    .fa-solid {
+        color: var(--footer-color);
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box-logo {
+        width: 100%;
+        height: 63px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .localisation {}
+
+    .titre {
+        font-family: 'Shrikhand', cursive;
+    }
+
+    .info {
+    }
+
+    .fonctionnement {}
+
+    .restaurants {}
+
+    .footer {}
 }

@@ -7,21 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./scss/dist/style.css" />
 </head>
 <body>
-    <header>
-        <div>
-            <img src="./Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
+    <header class="header">
+        <div class="box-logo">
+            <img class="logo" src="./Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
         </div>
         <nav>
             <div>
-                <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+                <p class="localisation"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
             </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="info">
             <div>
                 <h1>Réserver le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
@@ -30,7 +30,7 @@
                 <button class="button">Explorer nos restaurants</button>
             </div>
         </section>
-        <section>
+        <section class="fonctionnement">
             <div>
                 <h1>Fonctionnement</h1>
             </div>
@@ -64,12 +64,12 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="restaurants">
             <div>
                 <h1>Restaurants</h1>
             </div>
             <div>
-                <a href="/Restaurants/La_palette_du_gout/page1.html">
+                <a href="./La_palette_du_gout.html">
                     <article>
                         <div>
                             <img src="./Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût">
@@ -130,7 +130,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div>
             <h3>ohmyfood</h3>
         </div>

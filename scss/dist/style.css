@@ -20,6 +20,11 @@
     color: var(--footer-color);
   }
 
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
   .header {
     width: 100%;
     display: flex;
@@ -60,12 +65,80 @@
   }
 
   .info {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .explorer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    border: none;
+    background: linear-gradient(359deg, #9356DC, #FF79DA);
+    height: 50px;
+    width: 218px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 10px 0px #00000040;
   }
 
   .fonctionnement {
     width: 100%;
     background-color: var(--bloc-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fonct {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fonct-num {
+    width: 24px;
+    height: 24px;
+    background-color: var(--first-button-color);
+    color: #FFFFFF;
+    position: absolute;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+
+  .fonct-box {
+    height: 72px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    background-color: var(--main-color);
+  }
+
+  .fonct-txt {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fonct-vector {
+    width: 13px;
+    padding: 20px;
+    height: 19.9px;
+    color: #7E7E7E;
   }
 
   .restaurants {
@@ -78,6 +151,16 @@
     display: flex;
     flex-direction: column;
     border-radius: 15px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .card-sub {
+    font-size: 17px;
+    font-weight: 300;
   }
 
   .image-container {

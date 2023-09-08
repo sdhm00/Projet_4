@@ -20,6 +20,10 @@
     color: var(--footer-color);
   }
 
+  #store-color {
+    color: var(--first-button-color);
+  }
+
   h1 {
     font-weight: 700;
     font-size: 24px;
@@ -97,6 +101,10 @@
     gap: 20px;
   }
 
+  #fonc-title {
+    padding: 0 0 0 20px;
+  }
+
   .fonct {
     display: flex;
     flex-direction: column;
@@ -109,7 +117,7 @@
     background-color: var(--first-button-color);
     color: #FFFFFF;
     position: absolute;
-    left: 20px;
+    left: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,11 +128,10 @@
     height: 72px;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
     box-shadow: 0px 4px 15px 0px #00000026;
     background-color: var(--main-color);
+    margin: 0 30px;
   }
 
   .fonct-txt {
@@ -135,9 +142,7 @@
   }
 
   .fonct-vector {
-    width: 13px;
     padding: 20px;
-    height: 19.9px;
     color: #7E7E7E;
   }
 

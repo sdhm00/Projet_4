@@ -151,6 +151,31 @@
         width: 100%;
     }
 
+    .restaurants a {
+        text-decoration: none;
+        color: var(--footer-color);
+    }
+
+    .restaurants h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .restaurants p {
+        font-weight: 300;
+        font-size: 17px;
+        margin: 0;
+    }
+
+    #card-title {
+        font-weight: 700;
+    }
+
+    #card-sub {
+        font-weight: 300;
+    }
+
     #resto-cards {
         display: flex;
         flex-direction: column;
@@ -160,6 +185,10 @@
 
     .resto-txt {
         text-decoration: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
     .cards {
@@ -171,21 +200,10 @@
         height: 251px;
     }
 
-    .card-title {
-        font-size: 18px;
-        font-weight: 700;
-        margin: 0;
-    }
-
-    .card-sub {
-        font-size: 17px;
-        font-weight: 300;
-        margin: 0;
-    }
-
     .image-container {
         position: relative;
         display: inline-block;
+        height: 70%;
     }
 
     .img-cards {
@@ -211,23 +229,52 @@
 
     .cards-content {
         padding: 10px;
+        height: 30%;
     }
 
-    .vector2-posi {
-        display: flex;
-    }
-
-    .vector2 {
+    .heart-button {
         width: 22px;
         height: 21px;
+        background: none;
     }
 
     #heart-vector {
-        position: absolute
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 22px;
+        height: 21px;
+        padding: 0;
+        border: none;
+    }
+
+    .fa-heart:active {
+        background-color: var(--first-button-color);
     }
 
     .footer {
         width: 100%;
         background-color: var(--footer-color);
+    }
+
+    #ohmyfood {
+        font-family: 'Shrikhand', cursive;
+        font-size: 18px;
+        color: var(--bloc-color);
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        color: var(--bloc-color);
+    }
+
+    .footer-vector {
+        color: var(--bloc-color);
+    }
+
+    .footer a {
+        color: var(--bloc-color);
+        text-decoration: none;
     }
 }

@@ -1,5 +1,4 @@
 /****** General *******/
-@media (max-width: 375px) {
 
     body {
         font-family: 'Roboto', sans-serif;
@@ -228,6 +227,8 @@
     .cards-content {
         padding: 10px;
         height: 30%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .heart-button {
@@ -237,9 +238,6 @@
     }
 
     #heart-vector {
-        position: absolute;
-        right: 20px;
-        top: 20px;
         width: 22px;
         height: 21px;
         padding: 0;
@@ -362,4 +360,3 @@
         margin: 0;
         font-size: 28px;
     }
-}

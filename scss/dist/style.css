@@ -29,6 +29,10 @@ h1 {
   font-size: 24px;
 }
 
+.info p {
+  font-weight: 300;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -126,11 +130,12 @@ h1 {
   background-color: var(--first-button-color);
   color: #FFFFFF;
   position: absolute;
-  left: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  margin: 25px 15px;
+  font-size: 14px;
 }
 
 .fonct-box {
@@ -144,7 +149,7 @@ h1 {
 }
 
 .fonct-txt {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -415,4 +420,82 @@ h1 {
 
 .price-bloc p {
   margin: 0;
+}
+
+@media (min-width: 767.98px) {
+  .info {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .fonctionnement {
+    padding: 50px;
+  }
+
+  .fonct {
+    flex-direction: unset;
+    justify-content: space-evenly;
+  }
+
+  .fonct-bloc {
+    width: 30%;
+  }
+
+  .card-bloc {
+    width: 47%;
+  }
+
+  .bloc-resto {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .restaurants h1 {
+    margin: 0;
+  }
+
+  #resto-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer {
+    padding: 60px 20px 30px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+
+  #ohmyfood {
+    margin: 0 0 0 80px;
+  }
+
+  .footer-list {
+    flex-direction: unset;
+  }
+
+  .page1-bloc {
+    width: 60%;
+    border-radius: 40px 40px 0 0;
+    padding-bottom: 50px;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bloc-color);
+  }
+
+  .title-box {
+    justify-content: center;
+  }
 }

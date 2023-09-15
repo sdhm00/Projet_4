@@ -1,0 +1,218 @@
+/******General******/
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  justify-content: center;
+}
+.info .info p {
+  font-weight: 300;
+}
+
+.fonctionnement {
+  width: 100%;
+  background-color: var(--bloc-color);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 40px 0;
+}
+.fonctionnement #fonc-title {
+  padding: 0 0 0 20px;
+}
+.fonctionnement .fonct {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fonctionnement .fonct .fonct-num {
+  width: 24px;
+  height: 24px;
+  background-color: var(--first-button-color);
+  color: #FFFFFF;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin: 25px 15px;
+  font-size: 14px;
+}
+.fonctionnement .fonct .fonct-box {
+  height: 72px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 15px 0px #00000026;
+  background-color: var(--main-color);
+  margin: 0 30px;
+}
+.fonctionnement .fonct .fonct-box .fonct-txt {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.fonctionnement .fonct .fonct-box .fonct-vector {
+  padding: 20px;
+  color: #7E7E7E;
+  margin-left: 20px;
+}
+
+.restaurants {
+  margin: 17px;
+}
+.restaurants .restaurants a {
+  text-decoration: none;
+  color: var(--footer-color);
+}
+.restaurants .restaurants a .restaurants h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.restaurants .restaurants a .restaurants p {
+  font-weight: 300;
+  font-size: 17px;
+  margin: 0;
+}
+
+#resto-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-decoration: unset;
+}
+#resto-cards .cards {
+  width: 100%;
+  background-color: var(--bloc-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 251px;
+}
+#resto-cards .cards .image-container {
+  position: relative;
+  display: inline-block;
+  height: 70%;
+}
+#resto-cards .cards .image-container .img-cards {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 175px;
+  object-fit: cover;
+}
+#resto-cards .cards .image-container #new-card {
+  width: 80px;
+  height: 29px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: var(--new-color);
+  color: var(--new-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-weight: 500;
+}
+#resto-cards .cards .cards-content {
+  padding: 10px;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+#resto-cards .cards .cards-content .resto-txt {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#resto-cards .cards .cards-content .resto-txt #card-title {
+  font-weight: 700;
+}
+#resto-cards .cards .cards-content .resto-txt #card-sub {
+  font-weight: 300;
+}
+#resto-cards .cards .cards-content #heart-vector {
+  font-size: 22px;
+  padding: 0;
+  border: none;
+  margin: 10px;
+}
+
+/******Page1******/
+.page1-img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.page1-bloc {
+  border-radius: 40px;
+  position: relative;
+  top: -45px;
+  background-color: var(--main-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.page1-bloc .title-box {
+  display: flex;
+  justify-content: space-between;
+}
+.page1-bloc .title-box #titre {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  font-size: 28px;
+}
+.page1-bloc .h2-box {
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  height: 27px;
+}
+.page1-bloc .h2-box .underline {
+  height: 27px;
+  border-bottom: 3px solid #99E2D0;
+}
+.page1-bloc .h2-box .pages-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.page1-bloc .h2-box .pages-buttons .pages-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border: unset;
+  background-color: var(--bloc-color);
+  padding: 17.5px;
+  box-shadow: 0px 4px 15px 0px #0000001A;
+}
+.page1-bloc .h2-box .pages-buttons .pages-cards .cards-bloc {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.page1-bloc .h2-box .pages-buttons .pages-cards .cards-bloc .cards-bloc h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.page1-bloc .h2-box .pages-buttons .pages-cards .cards-bloc .cards-bloc p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+.page1-bloc .h2-box .pages-buttons .pages-cards .price-bloc {
+  width: 10%;
+}
+.page1-bloc .h2-box .pages-buttons .pages-cards .price-bloc .price-bloc p {
+  margin: 0;
+}

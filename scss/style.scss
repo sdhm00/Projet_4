@@ -20,70 +20,8 @@
 
 
 /****** General *******/
-
-    .fa-solid {
-        color: var(--footer-color);
-    }
-
-    #store-color {
-        color: var(--first-button-color);
-    }
-
-    h1 {
-        font-weight: 700;
-        font-size: 24px;
-    }
-
     .info p {
         font-weight: 300;
-    }
-
-    .header {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: var(--bloc-color);
-    }
-
-    .box-logo {
-        width: 100%;
-        box-shadow: 0px 2px 4px 0px #00000026;
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 14px 0 14px 0;
-        height: 36px;
-    }
-
-    #nav {
-        width: 100%;
-        background-color: var(--loca-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-    }
-
-    .localisation {
-        display: flex;
-        justify-content: center;
-        font-weight: 500;
-        color: var(--footer-color);
-    }
-
-    #input-box {
-        border: unset;
-        background-color: unset;
-    }
-
-    .vector1 {
-        margin: 0 17px 0 0;
     }
 
     .info {
@@ -92,23 +30,6 @@
         padding: 20px 30px 20px 30px;
         text-align: center;
         justify-content: center;
-    }
-    
-    .button-place {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .button {
-        border: none;
-        background: linear-gradient(359deg, #9356DC, #FF79DA);
-        height: 50px;
-        width: 218px;
-        border-radius: 25px;
-        font-size: 16px;
-        color: #FFFFFF;
-        box-shadow: 0px 4px 10px 0px #00000040;
     }
 
     .fonctionnement {
@@ -270,35 +191,6 @@
     .heart-button:active {
         display: none;
     }
-
-    .footer {
-        padding: 17px;
-        background-color: var(--footer-color);
-    }
-
-    #ohmyfood {
-        font-family: 'Shrikhand', cursive;
-        font-size: 18px;
-        color: var(--bloc-color);
-        margin-top: 0;
-    }
-
-    .footer-list {
-        display: flex;
-        flex-direction: column;
-        color: var(--bloc-color);
-        gap: 16px;
-    }
-
-    .footer-vector {
-        color: var(--bloc-color);
-    }
-
-    .footer a {
-        color: var(--bloc-color);
-        text-decoration: none;
-    }
-
     /******page1******/
 
     .arrow-box {
@@ -478,20 +370,12 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
-    }
-
-    #ohmyfood {
-        margin: 0 0 0 80px;
-    }
-
-    .footer-list {
-        flex-direction: unset;
-    }
-
-    .page1-bloc {
-        width: 60%;
-        border-radius: 40px 40px 0 0;
-        padding-bottom: 50px;
+        #ohmyfood {
+            margin: 0 0 0 80px;
+            .footer-list {
+                flex-direction: unset;
+            }
+        }
     }
 
     .pages {
@@ -499,9 +383,13 @@
         flex-direction: column;
         align-items: center;
         background-color: var(--bloc-color);
-    }
-
-    .title-box {
-        justify-content: center;
+        .page1-bloc {
+            width: 60%;
+            border-radius: 40px 40px 0 0;
+            padding-bottom: 50px;
+            .title-box {
+                justify-content: center;
+            }
+        }
     }
 }

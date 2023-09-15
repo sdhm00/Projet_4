@@ -1,0 +1,23 @@
+.footer {
+  padding: 17px;
+  background-color: var(--footer-color);
+}
+.footer #ohmyfood {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  color: var(--bloc-color);
+  margin-top: 0;
+}
+.footer .footer-list {
+  display: flex;
+  flex-direction: column;
+  color: var(--bloc-color);
+  gap: 16px;
+}
+.footer .footer-list .footer-vector {
+  color: var(--bloc-color);
+}
+.footer .footer-list .footer a {
+  color: var(--bloc-color);
+  text-decoration: none;
+}

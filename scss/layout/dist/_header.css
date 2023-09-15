@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bloc-color);
+}
+.header .box-logo {
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px #00000026;
+  display: flex;
+  justify-content: center;
+}
+.header .box-logo .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0 14px 0;
+  height: 36px;
+}

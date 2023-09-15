@@ -1,0 +1,21 @@
+#nav {
+  width: 100%;
+  background-color: var(--loca-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#nav .localisation {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--footer-color);
+}
+#nav .localisation .vector1 {
+  margin: 0 17px 0 0;
+}
+#nav .localisation #input-box {
+  border: unset;
+  background-color: unset;
+}

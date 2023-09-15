@@ -14,3 +14,16 @@ body {
   --new-text-color:#008766;
   --footer-color: #353535;
 }
+
+.fa-solid {
+  color: var(--footer-color);
+}
+
+#store-color {
+  color: var(--first-button-color);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}

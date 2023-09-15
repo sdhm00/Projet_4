@@ -33,16 +33,6 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.button-place .button {
-  border: none;
-  background: linear-gradient(359deg, #9356DC, #FF79DA);
-  height: 50px;
-  width: 218px;
-  border-radius: 25px;
-  font-size: 16px;
-  color: #FFFFFF;
-  box-shadow: 0px 4px 10px 0px #00000040;
-}
 
 /******General******/
 .info {
@@ -354,11 +344,49 @@ h1 {
   background-color: unset;
 }
 
+.button {
+  border: none;
+  background: linear-gradient(359deg, #9356DC, #FF79DA);
+  height: 50px;
+  width: 218px;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 10px 0px #00000040;
+}
+.button:hover {
+  transform: scale(1);
+  box-shadow: 0px 4px 15px 0px #00000059;
+  background: linear-gradient(359deg, #9356DC, #FF79DA);
+  opacity: 0.9;
+}
+
+.fa-solid {
+  color: color-mix(in srgb, --first-button-color 50%, --second-button-color 50%);
+}
+
 #heart-vector {
   font-size: 22px;
   padding: 0;
   border: none;
   margin: 10px;
+}
+
+#hover-vector {
+  display: none;
+  font-size: 22px;
+  padding: 0;
+  margin: 10px;
+  border: none;
+}
+
+#hover-vector:hover {
+  display: flex;
+  color: color-mix(in srgb, --first-button-color 50%, --second-button-color 50%);
+}
+
+#heart-vector:hover {
+  display: none;
 }
 
 .restaurants {

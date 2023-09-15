@@ -3,13 +3,3 @@
   justify-content: center;
   align-items: center;
 }
-.button-place .button {
-  border: none;
-  background: linear-gradient(359deg, #9356DC, #FF79DA);
-  height: 50px;
-  width: 218px;
-  border-radius: 25px;
-  font-size: 16px;
-  color: #FFFFFF;
-  box-shadow: 0px 4px 10px 0px #00000040;
-}

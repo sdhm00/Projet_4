@@ -7,14 +7,13 @@
     text-align: center;
     justify-content: center;
 
-    .info p {
+    p {
         font-weight: 300;
     }
 
 }
 
 .fonctionnement {
-    width: 100%;
     background-color: var(--bloc-color);
     display: flex;
     flex-direction: column;
@@ -69,99 +68,81 @@
 }
 
 .restaurants {
-    margin: 17px;
-
-    .restaurants a {
-        text-decoration: none;
-        color: var(--footer-color);
-
-        .restaurants h2 {
-            font-size: 18px;
-            font-weight: 700;
-            margin: 0;
-        }
-    
-        .restaurants p {
-            font-weight: 300;
-            font-size: 17px;
-            margin: 0;
-        }
-    }
-}
-
-#resto-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-decoration: unset;
-
-    .cards {
-        width: 100%;
-        background-color: var(--bloc-color);
+    #resto-cards {
         display: flex;
         flex-direction: column;
-        border-radius: 15px;
-        height: 251px;
+        gap: 20px;
+        text-decoration: unset;
 
-        .image-container {
-            position: relative;
-            display: inline-block;
-            height: 70%;
-
-            .img-cards {
-                width: 100%;
-                border-radius: 15px 15px 0 0;
-                height: 175px;
-                object-fit: cover;
-            }
-
-            #new-card {
-                width: 80px;
-                height: 29px;
-                position: absolute;
-                top: 10px;
-                right: 20px;
-                background-color: var(--new-color);
-                color: var(--new-text-color);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 2px;
-                font-weight: 500;
-            }
-        }
-
-        .cards-content {
-            padding: 10px;
-            height: 30%;
+        .cards {
+            width: 100%;
+            background-color: var(--bloc-color);
             display: flex;
-            justify-content: space-between;
-
-            .resto-txt {
-                text-decoration: none;
+            flex-direction: column;
+            border-radius: 15px;
+            height: 251px;
+    
+            .image-container {
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-
-                #card-title {
-                    font-weight: 700;
+                display: inline-block;
+                height: 70%;
+    
+                .img-cards {
+                    width: 100%;
+                    border-radius: 15px 15px 0 0;
+                    height: 175px;
+                    object-fit: cover;
                 }
-            
-                #card-sub {
-                    font-weight: 300;
+    
+                #new-card {
+                    width: 80px;
+                    height: 29px;
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    background-color: var(--new-color);
+                    color: var(--new-text-color);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 2px;
+                    font-weight: 500;
                 }
             }
+    
+            .cards-content {
+                padding: 10px;
+                height: 30%;
+                display: flex;
+                justify-content: space-between;
+    
+                .resto-txt {
+                    text-decoration: none;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
 
-            #heart-vector {
-                font-size: 22px;
-                padding: 0;
-                border: none;
-                margin: 10px;
+                    #card-title {
+                        font-weight: 700;
+                    }
+
+                    #card-sub {
+                        font-weight: 300;
+                    }
+                }
+    
+                #heart-vector {
+                    font-size: 22px;
+                    padding: 0;
+                    border: none;
+                    margin: 10px;
+                }
             }
         }
     }
 }
+
 
 /******Page1******/
 
@@ -189,64 +170,6 @@
             font-family: 'Shrikhand', cursive;
             margin: 0;
             font-size: 28px;
-        }
-    }
-
-    .h2-box {
-        font-size: 16px;
-        font-weight: 300;   
-        display: flex;
-        height: 27px;
-
-        .underline {
-            height: 27px;
-            border-bottom: 3px solid #99E2D0
-        }
-
-        .pages-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-    
-            .pages-cards {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                border-radius: 15px;
-                border: unset;
-                background-color: var(--bloc-color);
-                padding: 17.5px;
-                box-shadow: 0px 4px 15px 0px #0000001A;
-    
-                .cards-bloc {
-                    width: 90%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 5px;
-    
-                    .cards-bloc h3 {
-                        margin: 0;
-                        font-size: 18px;
-                        font-weight: 500;
-                    }
-    
-    
-                    .cards-bloc p {
-                        margin: 0;
-                        font-size: 15px;
-                        font-weight: 300;
-                    }
-                }
-    
-                .price-bloc {
-                    width: 10%;
-    
-                    .price-bloc p {
-                        margin: 0;
-                    }
-                }
-            }
         }
     }
 }
@@ -281,7 +204,7 @@
         gap: 30px;
         padding: 50px;
     
-        .restaurants h1 {
+        h1 {
             margin: 0;
         }
     

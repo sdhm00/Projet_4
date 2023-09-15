@@ -12,3 +12,99 @@
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/nav";
+
+.restaurants {
+    margin: 17px;
+}
+
+.restaurants a {
+    text-decoration: none;
+    color: var(--footer-color);
+}
+
+.restaurants h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.restaurants p {
+    font-weight: 300;
+    font-size: 17px;
+    margin: 0;
+}
+
+.h2-box {
+    font-size: 16px;
+    font-weight: 300;   
+    display: flex;
+    height: 27px
+}
+
+.underline {
+    height: 27px;
+    border-bottom: 3px solid #99E2D0
+}
+
+.pages-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pages-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: unset;
+    background-color: var(--bloc-color);
+    padding: 17.5px;
+    box-shadow: 0px 4px 15px 0px #0000001A;
+}
+
+.cards-bloc {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.cards-bloc h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cards-bloc p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.price-bloc {
+    width: 10%;
+}
+
+.price-bloc p {
+    margin: 0;
+}
+
+
+
+@media (min-width: 767.98px) {
+    .footer {
+        padding: 60px 20px 30px 0;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        #ohmyfood {
+            margin: 0 0 0 80px;
+        }
+    }
+
+    .footer .footer-list {
+        flex-direction: unset;
+    }
+}

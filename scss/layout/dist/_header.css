@@ -30,7 +30,7 @@
 }
 .header-p1 .arrow-box {
   height: 30px;
-  width: 10%;
+  width: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@
   font-size: 17px;
 }
 .header-p1 .logo-box {
-  width: 90%;
+  width: 95%;
   height: 36px;
   display: flex;
   justify-content: center;

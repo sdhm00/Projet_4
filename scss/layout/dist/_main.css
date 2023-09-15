@@ -216,3 +216,62 @@
 .page1-bloc .h2-box .pages-buttons .pages-cards .price-bloc .price-bloc p {
   margin: 0;
 }
+
+/******Phone screen******/
+/******General******/
+@media (min-width: 767.98px) {
+  .info {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .fonctionnement {
+    padding: 50px;
+  }
+  .fonctionnement .fonct {
+    flex-direction: unset;
+    justify-content: space-evenly;
+  }
+  .fonctionnement .fonct .fonct-bloc {
+    width: 30%;
+  }
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+  .restaurants .restaurants h1 {
+    margin: 0;
+  }
+  .restaurants .bloc-resto {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .restaurants .bloc-resto #resto-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .restaurants .bloc-resto #resto-cards .card-bloc {
+    width: 47%;
+  }
+}
+/******Page1******/
+@media (min-width: 767.98px) {
+  .pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bloc-color);
+  }
+  .pages .page1-bloc {
+    width: 60%;
+    border-radius: 40px 40px 0 0;
+    padding-bottom: 50px;
+  }
+  .pages .page1-bloc .title-box {
+    justify-content: center;
+  }
+}

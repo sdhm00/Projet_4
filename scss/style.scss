@@ -4,93 +4,11 @@
 @import "./utils/extensions";
 
 @import "./base/base";
-@import "./base/typography";
 
 @import "./components/buttons";
+@import "./components/cards";
 
-@import "./layout/cards";
+@import "./layout/main";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/nav";
-
-@import "./pages/pageALF" ;
-@import "./pages/pageLDDS" ;
-@import "./pages/pageLNE" ;
-@import "./pages/pageLPDG" ;
-
-
-/****** General *******/
-
-@media (min-width: 767.98px) {
-    .info {
-        flex-direction: column;
-        padding: 50px;
-    }
-
-    .fonctionnement {
-        padding: 50px;
-    }
-
-    .fonct {
-        flex-direction: unset;
-        justify-content: space-evenly;
-    }
-
-    .fonct-bloc {
-        width: 30%;
-    }
-
-    .card-bloc {
-        width: 47%;
-    }
-
-    .bloc-resto {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .restaurants {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 50px;
-    }
-
-    .restaurants h1 {
-        margin: 0;
-    }
-
-    #resto-cards {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .footer {
-        padding: 60px 20px 30px 0;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        #ohmyfood {
-            margin: 0 0 0 80px;
-            .footer-list {
-                flex-direction: unset;
-            }
-        }
-    }
-
-    .pages {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--bloc-color);
-        .page1-bloc {
-            width: 60%;
-            border-radius: 40px 40px 0 0;
-            padding-bottom: 50px;
-            .title-box {
-                justify-content: center;
-            }
-        }
-    }
-}

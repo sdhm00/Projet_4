@@ -15,7 +15,6 @@ body {
   --footer-color: #353535;
 }
 
-/****** General *******/
 .fa-solid {
   color: var(--footer-color);
 }
@@ -29,73 +28,12 @@ h1 {
   font-size: 24px;
 }
 
-.info p {
-  font-weight: 300;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--bloc-color);
-}
-
-.box-logo {
-  width: 100%;
-  box-shadow: 0px 2px 4px 0px #00000026;
-  display: flex;
-  justify-content: center;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 14px 0 14px 0;
-  height: 36px;
-}
-
-#nav {
-  width: 100%;
-  background-color: var(--loca-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
-
-.localisation {
-  display: flex;
-  justify-content: center;
-  font-weight: 500;
-  color: var(--footer-color);
-}
-
-#input-box {
-  border: unset;
-  background-color: unset;
-}
-
-.vector1 {
-  margin: 0 17px 0 0;
-}
-
-.info {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 30px 20px 30px;
-  text-align: center;
-  justify-content: center;
-}
-
 .button-place {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.button {
+.button-place .button {
   border: none;
   background: linear-gradient(359deg, #9356DC, #FF79DA);
   height: 50px;
@@ -106,6 +44,18 @@ h1 {
   box-shadow: 0px 4px 10px 0px #00000040;
 }
 
+/******General******/
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  justify-content: center;
+}
+.info .info p {
+  font-weight: 300;
+}
+
 .fonctionnement {
   width: 100%;
   background-color: var(--bloc-color);
@@ -113,18 +63,15 @@ h1 {
   flex-direction: column;
   padding: 30px 0 40px 0;
 }
-
-#fonc-title {
+.fonctionnement #fonc-title {
   padding: 0 0 0 20px;
 }
-
-.fonct {
+.fonctionnement .fonct {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.fonct-num {
+.fonctionnement .fonct .fonct-num {
   width: 24px;
   height: 24px;
   background-color: var(--first-button-color);
@@ -137,8 +84,7 @@ h1 {
   margin: 25px 15px;
   font-size: 14px;
 }
-
-.fonct-box {
+.fonctionnement .fonct .fonct-box {
   height: 72px;
   border-radius: 20px;
   display: flex;
@@ -147,15 +93,13 @@ h1 {
   background-color: var(--main-color);
   margin: 0 30px;
 }
-
-.fonct-txt {
+.fonctionnement .fonct .fonct-box .fonct-txt {
   font-weight: 500;
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
-
-.fonct-vector {
+.fonctionnement .fonct .fonct-box .fonct-vector {
   padding: 20px;
   color: #7E7E7E;
   margin-left: 20px;
@@ -164,30 +108,19 @@ h1 {
 .restaurants {
   margin: 17px;
 }
-
-.restaurants a {
+.restaurants .restaurants a {
   text-decoration: none;
   color: var(--footer-color);
 }
-
-.restaurants h2 {
+.restaurants .restaurants a .restaurants h2 {
   font-size: 18px;
   font-weight: 700;
   margin: 0;
 }
-
-.restaurants p {
+.restaurants .restaurants a .restaurants p {
   font-weight: 300;
   font-size: 17px;
   margin: 0;
-}
-
-#card-title {
-  font-weight: 700;
-}
-
-#card-sub {
-  font-weight: 300;
 }
 
 #resto-cards {
@@ -196,16 +129,7 @@ h1 {
   gap: 20px;
   text-decoration: unset;
 }
-
-.resto-txt {
-  text-decoration: none;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.cards {
+#resto-cards .cards {
   width: 100%;
   background-color: var(--bloc-color);
   display: flex;
@@ -213,21 +137,18 @@ h1 {
   border-radius: 15px;
   height: 251px;
 }
-
-.image-container {
+#resto-cards .cards .image-container {
   position: relative;
   display: inline-block;
   height: 70%;
 }
-
-.img-cards {
+#resto-cards .cards .image-container .img-cards {
   width: 100%;
   border-radius: 15px 15px 0 0;
   height: 175px;
   object-fit: cover;
 }
-
-#new-card {
+#resto-cards .cards .image-container #new-card {
   width: 80px;
   height: 29px;
   position: absolute;
@@ -241,102 +162,33 @@ h1 {
   border-radius: 2px;
   font-weight: 500;
 }
-
-.cards-content {
+#resto-cards .cards .cards-content {
   padding: 10px;
   height: 30%;
   display: flex;
   justify-content: space-between;
 }
-
-.heart-button {
-  width: 22px;
-  height: 21px;
-  background: none;
+#resto-cards .cards .cards-content .resto-txt {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-
-#heart-vector {
+#resto-cards .cards .cards-content .resto-txt #card-title {
+  font-weight: 700;
+}
+#resto-cards .cards .cards-content .resto-txt #card-sub {
+  font-weight: 300;
+}
+#resto-cards .cards .cards-content #heart-vector {
   font-size: 22px;
   padding: 0;
   border: none;
   margin: 10px;
 }
 
-.heart-button:active {
-  display: none;
-}
-
-.footer {
-  padding: 17px;
-  background-color: var(--footer-color);
-}
-
-#ohmyfood {
-  font-family: "Shrikhand", cursive;
-  font-size: 18px;
-  color: var(--bloc-color);
-  margin-top: 0;
-}
-
-.footer-list {
-  display: flex;
-  flex-direction: column;
-  color: var(--bloc-color);
-  gap: 16px;
-}
-
-.footer-vector {
-  color: var(--bloc-color);
-}
-
-.footer a {
-  color: var(--bloc-color);
-  text-decoration: none;
-}
-
-/******page1******/
-.arrow-box {
-  height: 30px;
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.arrow-style {
-  text-decoration: unset;
-}
-
-#arrow-vector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-}
-
-.header-p1 {
-  width: 100%;
-  height: 63px;
-  display: flex;
-  align-items: center;
-  background-color: var(--bloc-color);
-}
-
-.logo-box {
-  width: 90%;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-p1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 36px;
-}
-
+/******Page1******/
 .page1-img {
   width: 100%;
   height: 275px;
@@ -353,37 +205,31 @@ h1 {
   flex-direction: column;
   gap: 30px;
 }
-
-.title-box {
+.page1-bloc .title-box {
   display: flex;
   justify-content: space-between;
 }
-
-#titre {
+.page1-bloc .title-box #titre {
   font-family: "Shrikhand", cursive;
   margin: 0;
   font-size: 28px;
 }
-
-.h2-box {
+.page1-bloc .h2-box {
   font-size: 16px;
   font-weight: 300;
   display: flex;
   height: 27px;
 }
-
-.underline {
+.page1-bloc .h2-box .underline {
   height: 27px;
   border-bottom: 3px solid #99E2D0;
 }
-
-.pages-buttons {
+.page1-bloc .h2-box .pages-buttons {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
-.pages-cards {
+.page1-bloc .h2-box .pages-buttons .pages-cards {
   width: 100%;
   display: flex;
   align-items: center;
@@ -393,35 +239,32 @@ h1 {
   padding: 17.5px;
   box-shadow: 0px 4px 15px 0px #0000001A;
 }
-
-.cards-bloc {
+.page1-bloc .h2-box .pages-buttons .pages-cards .cards-bloc {
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
 }
-
-.cards-bloc h3 {
+.page1-bloc .h2-box .pages-buttons .pages-cards .cards-bloc .cards-bloc h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
 }
-
-.cards-bloc p {
+.page1-bloc .h2-box .pages-buttons .pages-cards .cards-bloc .cards-bloc p {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
 }
-
-.price-bloc {
+.page1-bloc .h2-box .pages-buttons .pages-cards .price-bloc {
   width: 10%;
 }
-
-.price-bloc p {
+.page1-bloc .h2-box .pages-buttons .pages-cards .price-bloc .price-bloc p {
   margin: 0;
 }
 
+/******Phone screen******/
+/******General******/
 @media (min-width: 767.98px) {
   .info {
     flex-direction: column;
@@ -431,24 +274,12 @@ h1 {
   .fonctionnement {
     padding: 50px;
   }
-
-  .fonct {
+  .fonctionnement .fonct {
     flex-direction: unset;
     justify-content: space-evenly;
   }
-
-  .fonct-bloc {
+  .fonctionnement .fonct .fonct-bloc {
     width: 30%;
-  }
-
-  .card-bloc {
-    width: 47%;
-  }
-
-  .bloc-resto {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
   }
 
   .restaurants {
@@ -457,29 +288,24 @@ h1 {
     gap: 30px;
     padding: 50px;
   }
-
-  .restaurants h1 {
+  .restaurants .restaurants h1 {
     margin: 0;
   }
-
-  #resto-cards {
+  .restaurants .bloc-resto {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .restaurants .bloc-resto #resto-cards {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .footer {
-    padding: 60px 20px 30px 0;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+  .restaurants .bloc-resto #resto-cards .card-bloc {
+    width: 47%;
   }
-  .footer #ohmyfood {
-    margin: 0 0 0 80px;
-  }
-  .footer #ohmyfood .footer-list {
-    flex-direction: unset;
-  }
-
+}
+/******Page1******/
+@media (min-width: 767.98px) {
   .pages {
     display: flex;
     flex-direction: column;
@@ -494,4 +320,125 @@ h1 {
   .pages .page1-bloc .title-box {
     justify-content: center;
   }
+}
+.footer {
+  padding: 17px;
+  background-color: var(--footer-color);
+}
+.footer #ohmyfood {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  color: var(--bloc-color);
+  margin-top: 0;
+}
+.footer .footer-list {
+  display: flex;
+  flex-direction: column;
+  color: var(--bloc-color);
+  gap: 16px;
+}
+.footer .footer-list .footer-vector {
+  color: var(--bloc-color);
+}
+.footer .footer-list .footer a {
+  color: var(--bloc-color);
+  text-decoration: none;
+}
+
+/******Phone screen******/
+/******General******/
+@media (min-width: 767.98px) {
+  .footer {
+    padding: 60px 20px 30px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+  .footer #ohmyfood {
+    margin: 0 0 0 80px;
+  }
+  .footer #ohmyfood .footer-list {
+    flex-direction: unset;
+  }
+}
+/******General******/
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bloc-color);
+}
+.header .box-logo {
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px #00000026;
+  display: flex;
+  justify-content: center;
+}
+.header .box-logo .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0 14px 0;
+  height: 36px;
+}
+
+/******Page1******/
+.header-p1 {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  background-color: var(--bloc-color);
+}
+.header-p1 .arrow-box {
+  height: 30px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.header-p1 .arrow-box .arrow-style {
+  text-decoration: unset;
+}
+.header-p1 .arrow-box .arrow-style #arrow-vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+.header-p1 .logo-box {
+  width: 90%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+}
+.header-p1 .logo-box .logo-p1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+}
+
+#nav {
+  width: 100%;
+  background-color: var(--loca-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#nav .localisation {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--footer-color);
+}
+#nav .localisation .vector1 {
+  margin: 0 17px 0 0;
+}
+#nav .localisation #input-box {
+  border: unset;
+  background-color: unset;
 }

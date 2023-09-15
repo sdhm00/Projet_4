@@ -249,5 +249,74 @@
             }
         }
     }
+}
 
+/******Phone screen******/
+
+/******General******/
+
+@media (min-width: 767.98px) {
+    .info {
+        flex-direction: column;
+        padding: 50px;
+    }
+    
+    .fonctionnement {
+        padding: 50px;
+    
+        .fonct {
+            flex-direction: unset;
+            justify-content: space-evenly;
+    
+            .fonct-bloc {
+                width: 30%;
+            }
+        }
+    
+    }
+    
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px;
+    
+        .restaurants h1 {
+            margin: 0;
+        }
+    
+        .bloc-resto {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+    
+            #resto-cards {
+                flex-direction: row;
+                justify-content: space-between;
+    
+                .card-bloc {
+                    width: 47%;
+                }
+            }
+        }
+    }
+}
+
+/******Page1******/
+
+@media (min-width: 767.98px) {
+    .pages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--bloc-color);
+        .page1-bloc {
+            width: 60%;
+            border-radius: 40px 40px 0 0;
+            padding-bottom: 50px;
+            .title-box {
+                justify-content: center;
+            }
+        }
+    }
 }

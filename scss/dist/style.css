@@ -162,12 +162,6 @@ h1 {
 .restaurants #resto-cards .cards .cards-content .resto-txt #card-sub {
   font-weight: 300;
 }
-.restaurants #resto-cards .cards .cards-content #heart-vector {
-  font-size: 22px;
-  padding: 0;
-  border: none;
-  margin: 10px;
-}
 
 /******Page1******/
 .page1-img {
@@ -358,6 +352,13 @@ h1 {
 #nav .localisation #input-box {
   border: unset;
   background-color: unset;
+}
+
+#heart-vector {
+  font-size: 22px;
+  padding: 0;
+  border: none;
+  margin: 10px;
 }
 
 .restaurants {

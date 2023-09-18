@@ -136,6 +136,122 @@
     }
 }
 
+#heart-vector {
+    font-size: 22px;
+    padding: 0;
+    border: none;
+    margin: 10px;
+    position: absolute;
+    background: var(--bloc-color);
+    background-clip: content-box;
+    color: black;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hover-vector {
+    font-size: 22px;
+    padding: 0;
+    margin: 10px;
+    border: none;
+    background: -webkit-linear-gradient(-90deg, #9356DC, #FF79DA);
+    background-clip: content-box;
+    color: transparent;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+#hover-vector:hover {
+    opacity: unset;
+}
+
+#heart-vector:hover {
+    opacity: 0;
+}
+
+.restaurants {
+    margin: 17px;
+}
+
+.restaurants a {
+    text-decoration: none;
+    color: var(--footer-color);
+}
+
+.restaurants h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.restaurants p {
+    font-weight: 300;
+    font-size: 17px;
+    margin: 0;
+}
+
+.h2-box {
+    font-size: 16px;
+    font-weight: 300;   
+    display: flex;
+    height: 27px
+}
+
+.underline {
+    height: 27px;
+    border-bottom: 3px solid #99E2D0
+}
+
+.pages-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.pages-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: unset;
+    background-color: var(--bloc-color);
+    padding: 0;
+    box-shadow: 0px 4px 15px 0px #0000001A;
+    height: 69px;
+}
+
+.cards-bloc {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 17.5px;
+}
+
+.cards-bloc h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cards-bloc p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.price-bloc {
+    width: 10%;
+}
+
+.price-bloc p {
+    margin: 0;
+}
+
 
 /******Page1******/
 

@@ -3,7 +3,7 @@ body {
 }
 
 body.loading .loader {
-    animation: fadeOut 1s forwards 3s;
+    animation: fadeOut 1s forwards 1.5s;
 }
 
 @keyframes fadeOut {
@@ -17,7 +17,7 @@ body.loading .loader {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {

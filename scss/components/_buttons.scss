@@ -49,8 +49,16 @@
     }
 
     .cards-bloc {
-        width: 85%;
+        width: 75%;
     }
 
+}
+
+@media (min-width: 767.98px) {
+    .pages-cards:hover {
+        .cards-bloc {
+            width: 85%;
+        }
+    }
 }
 

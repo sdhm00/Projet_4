@@ -187,13 +187,13 @@ body.loading .loader {
   margin-left: 20px;
 }
 
-.restaurants #resto-cards {
+.restaurants .resto-cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-decoration: unset;
 }
-.restaurants #resto-cards .cards {
+.restaurants .resto-cards .cards {
   width: 100%;
   background-color: var(--bloc-color);
   display: flex;
@@ -201,19 +201,19 @@ body.loading .loader {
   border-radius: 15px;
   height: 251px;
 }
-.restaurants #resto-cards .cards .image-container {
+.restaurants .resto-cards .cards .image-container {
   position: relative;
   display: inline-block;
   height: 70%;
 }
-.restaurants #resto-cards .cards .image-container .img-cards {
+.restaurants .resto-cards .cards .image-container .img-cards {
   width: 100%;
   border-radius: 15px 15px 0 0;
   height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurants #resto-cards .cards .image-container #new-card {
+.restaurants .resto-cards .cards .image-container .new-card {
   width: 80px;
   height: 29px;
   position: absolute;
@@ -227,27 +227,27 @@ body.loading .loader {
   border-radius: 2px;
   font-weight: 500;
 }
-.restaurants #resto-cards .cards .cards-content {
+.restaurants .resto-cards .cards .cards-content {
   padding: 10px;
   height: 30%;
   display: flex;
   justify-content: space-between;
 }
-.restaurants #resto-cards .cards .cards-content .resto-txt {
+.restaurants .resto-cards .cards .cards-content .resto-txt {
   text-decoration: none;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.restaurants #resto-cards .cards .cards-content .resto-txt #card-title {
+.restaurants .resto-cards .cards .cards-content .resto-txt .card-title {
   font-weight: 700;
 }
-.restaurants #resto-cards .cards .cards-content .resto-txt #card-sub {
+.restaurants .resto-cards .cards .cards-content .resto-txt .card-sub {
   font-weight: 300;
 }
 
-#heart-vector {
+.heart-vector {
   font-size: 22px;
   padding: 0;
   border: none;
@@ -263,7 +263,7 @@ body.loading .loader {
   z-index: 100;
 }
 
-#hover-vector {
+.hover-vector {
   font-size: 22px;
   padding: 0;
   margin: 10px;
@@ -275,11 +275,11 @@ body.loading .loader {
   opacity: 0;
 }
 
-#hover-vector:hover {
+.hover-vector:hover {
   opacity: unset;
 }
 
-#heart-vector:hover {
+.heart-vector:hover {
   opacity: 0;
 }
 

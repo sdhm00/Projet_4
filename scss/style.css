@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-color);
   margin: 0;
+  height: 100%;
 }
 
 :root {
@@ -75,16 +76,23 @@ h1 {
 .pages-cards:hover .price-bloc {
   right: 84px;
 }
+.pages-cards:hover .cards-bloc {
+  width: 80%;
+}
 
 @media (min-width: 767.98px) {
   .pages-cards:hover .cards-bloc {
     width: 90%;
   }
 }
-body {
-  height: 100%;
+.heart-hover:hover .hover-vector {
+  opacity: unset;
+}
+.heart-hover:hover .heart-vector {
+  opacity: 0;
 }
 
+/******Loader******/
 body.loading .loader {
   animation: fadeOut 1s forwards 1.5s;
 }
@@ -100,7 +108,7 @@ body.loading .loader {
 }
 .load {
   border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #9356DC;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -248,13 +256,6 @@ body.loading .loader {
   font-weight: 300;
 }
 
-.heart-hover:hover .hover-vector {
-  opacity: unset;
-}
-.heart-hover:hover .heart-vector {
-  opacity: 0;
-}
-
 .heart-vector {
   font-size: 22px;
   padding: 0;
@@ -341,6 +342,11 @@ body.loading .loader {
   align-items: flex-start;
   gap: 5px;
   width: 95%;
+  transition: width 0.3s ease-in-out;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
 }
 
 .cards-bloc h3 {
@@ -367,7 +373,7 @@ body.loading .loader {
   margin: 0;
 }
 
-/******Page1******/
+/******Page 1******/
 .page1-img {
   width: 100%;
   height: 275px;
@@ -395,8 +401,7 @@ body.loading .loader {
   font-size: 28px;
 }
 
-/******Phone screen******/
-/******General******/
+/******Desktop screen******/
 @media (min-width: 767.98px) {
   .info {
     flex-direction: column;
@@ -434,7 +439,6 @@ body.loading .loader {
     justify-content: space-between;
   }
 }
-/******Page1******/
 @media (min-width: 767.98px) {
   .pages {
     display: flex;
@@ -569,4 +573,6 @@ body.loading .loader {
 #nav .localisation #input-box {
   border: unset;
   background-color: unset;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/******Desktop screen******//*# sourceMappingURL=style.css.map */

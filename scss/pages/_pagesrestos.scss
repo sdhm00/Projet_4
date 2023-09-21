@@ -56,6 +56,9 @@
     height: 69px;
     overflow: hidden;
     position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .cards-bloc {
@@ -64,6 +67,7 @@
     align-items: flex-start;
     gap: 5px;
     width: 95%;
+    transition: width 0.3s ease-in-out;
 }
 
 .cards-bloc h3 {

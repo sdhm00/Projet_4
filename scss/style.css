@@ -85,6 +85,9 @@ h1 {
     width: 90%;
   }
 }
+.heart-hover:hover {
+  animation: colorFill 2s ease-in-out;
+}
 .heart-hover:hover .hover-vector {
   opacity: unset;
 }
@@ -92,6 +95,14 @@ h1 {
   opacity: 0;
 }
 
+@keyframes colorFill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: unset;
+  }
+}
 /******Loader******/
 body.loading .loader {
   animation: fadeOut 1s forwards 1.5s;

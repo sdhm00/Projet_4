@@ -70,6 +70,7 @@
 }
 
 .heart-hover:hover {
+    animation: colorFill 2s ease-in-out;
     .hover-vector {
         opacity: unset;
     }
@@ -79,3 +80,7 @@
     }
 }
 
+@keyframes colorFill {
+    0% {opacity: 0;}
+    100% { opacity: unset;}
+}

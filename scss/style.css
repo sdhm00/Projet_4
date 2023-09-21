@@ -419,17 +419,17 @@ body.loading .loader {
   .restaurants h1 {
     margin: 0;
   }
+  .restaurants a {
+    width: 100%;
+  }
   .restaurants .bloc-resto {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
-  .restaurants .bloc-resto #resto-cards {
+  .restaurants .bloc-resto .resto-cards {
     flex-direction: row;
     justify-content: space-between;
-  }
-  .restaurants .bloc-resto #resto-cards .card-bloc {
-    width: 47%;
   }
 }
 /******Page1******/

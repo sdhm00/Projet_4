@@ -116,65 +116,65 @@ body.loading .loader {
         gap: 20px;
         text-decoration: unset;
 
-        .cards {
-            width: 100%;
-            background-color: var(--bloc-color);
-            display: flex;
-            flex-direction: column;
-            border-radius: 15px;
-            height: 251px;
-    
-            .image-container {
-                position: relative;
-                display: inline-block;
-                height: 70%;
-    
-                .img-cards {
-                    width: 100%;
-                    border-radius: 15px 15px 0 0;
-                    height: 175px;
-                    object-fit: cover;
-                }
-    
-                .new-card {
-                    width: 80px;
-                    height: 29px;
-                    position: absolute;
-                    top: 10px;
-                    right: 20px;
-                    background-color: var(--new-color);
-                    color: var(--new-text-color);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 2px;
-                    font-weight: 500;
-                }
-            }
-    
-            .cards-content {
-                padding: 10px;
-                height: 30%;
+            .cards {
+                width: 100%;
+                background-color: var(--bloc-color);
                 display: flex;
-                justify-content: space-between;
-    
-                .resto-txt {
-                    text-decoration: none;
+                flex-direction: column;
+                border-radius: 15px;
+                height: 251px;
+        
+                .image-container {
                     position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-
-                    .card-title {
-                        font-weight: 700;
+                    display: inline-block;
+                    height: 70%;
+        
+                    .img-cards {
+                        width: 100%;
+                        border-radius: 15px 15px 0 0;
+                        height: 175px;
+                        object-fit: cover;
                     }
-
-                    .card-sub {
-                        font-weight: 300;
+        
+                    .new-card {
+                        width: 80px;
+                        height: 29px;
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                        background-color: var(--new-color);
+                        color: var(--new-text-color);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 2px;
+                        font-weight: 500;
+                    }
+                }
+        
+                .cards-content {
+                    padding: 10px;
+                    height: 30%;
+                    display: flex;
+                    justify-content: space-between;
+        
+                    .resto-txt {
+                        text-decoration: none;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+    
+                        .card-title {
+                            font-weight: 700;
+                        }
+    
+                        .card-sub {
+                            font-weight: 300;
+                        }
                     }
                 }
             }
-        }
     }
 }
 
@@ -361,19 +361,19 @@ body.loading .loader {
         h1 {
             margin: 0;
         }
+
+        a {
+            width: 100%;
+        }
     
         .bloc-resto {
             display: flex;
             flex-direction: column;
             gap: 50px;
     
-            #resto-cards {
+            .resto-cards {
                 flex-direction: row;
                 justify-content: space-between;
-    
-                .card-bloc {
-                    width: 47%;
-                }
             }
         }
     }

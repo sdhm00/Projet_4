@@ -1,0 +1,180 @@
+
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    justify-content: center;
+
+    p {
+        font-weight: 300;
+    }
+}
+
+.fonctionnement {
+    #fonc-title {
+        padding: 0 0 0 20px;
+    }
+
+    .fonct {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .fonct-num {
+            width: 24px;
+            height: 24px;
+            background-color: var(--first-button-color);
+            color: #FFFFFF;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            margin: 25px 15px;
+            font-size: 14px;
+        }
+
+        .fonct-box {
+            height: 72px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4px 15px 0px #00000026;
+            background-color: var(--main-color);
+            margin: 0 30px;
+
+            .fonct-txt {
+                font-weight: 500;
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .fonct-vector {
+                padding: 20px;
+                color: #7E7E7E;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.restaurants {
+    .resto-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-decoration: unset;
+
+            .cards {
+                width: 100%;
+                background-color: var(--bloc-color);
+                display: flex;
+                flex-direction: column;
+                border-radius: 15px;
+                height: 251px;
+        
+                .image-container {
+                    position: relative;
+                    display: inline-block;
+                    height: 70%;
+        
+                    .img-cards {
+                        width: 100%;
+                        border-radius: 15px 15px 0 0;
+                        height: 175px;
+                        object-fit: cover;
+                    }
+        
+                    .new-card {
+                        width: 80px;
+                        height: 29px;
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                        background-color: var(--new-color);
+                        color: var(--new-text-color);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 2px;
+                        font-weight: 500;
+                    }
+                }
+        
+                .cards-content {
+                    padding: 10px;
+                    height: 30%;
+                    display: flex;
+                    justify-content: space-between;
+        
+                    .resto-txt {
+                        text-decoration: none;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+    
+                        .card-title {
+                            font-weight: 700;
+                        }
+    
+                        .card-sub {
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+    }
+}
+
+/******Desktop screen******/
+
+@media (min-width: 767.98px) {
+    .info {
+        flex-direction: column;
+        padding: 50px;
+    }
+    
+    .fonctionnement {
+        padding: 50px;
+    
+        .fonct {
+            flex-direction: unset;
+            justify-content: space-evenly;
+    
+            .fonct-bloc {
+                width: 30%;
+            }
+        }
+    
+    }
+    
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px;
+    
+        h1 {
+            margin: 0;
+        }
+
+        a {
+            width: 100%;
+        }
+    
+        .bloc-resto {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+    
+            .resto-cards {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+}

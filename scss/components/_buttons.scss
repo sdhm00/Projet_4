@@ -65,3 +65,40 @@
     }
 }
 
+.heart-hover:hover {
+    .hover-vector {
+        opacity: unset;
+    }
+
+    .heart-vector {
+        opacity: 0;
+    }
+}
+
+.heart-vector {
+    font-size: 22px;
+    padding: 0;
+    border: none;
+    margin: 10px;
+    position: absolute;
+    background: var(--bloc-color);
+    background-clip: content-box;
+    color: black;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.hover-vector {
+    font-size: 22px;
+    padding: 0;
+    margin: 10px;
+    border: none;
+    background: -webkit-linear-gradient(-90deg, #9356DC, #FF79DA);
+    background-clip: content-box;
+    color: transparent;
+    -webkit-background-clip: text;
+    opacity: 0;
+}

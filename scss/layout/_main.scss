@@ -273,7 +273,6 @@ body.loading .loader {
     align-items: flex-start;
     gap: 5px;
     width: 95%;
-    transition: width 0.3s ease-in-out;
 }
 
 .cards-bloc h3 {
@@ -291,6 +290,9 @@ body.loading .loader {
 .price-bloc {
     display: flex;
     justify-content: center;
+    position: absolute;
+    right: 15px;
+    transition: right 0.3s ease-in-out;
 }
 
 .price-bloc p {

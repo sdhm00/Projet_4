@@ -43,13 +43,16 @@
     }
 }
 
+
+
 .pages-cards:hover {
     .check {
         width: 69px;
+        margin: 0 0 0 5px;
     }
 
-    .cards-bloc {
-        width: 75%;
+    .price-bloc {
+        right: 84px;
     }
 
 }
@@ -57,7 +60,7 @@
 @media (min-width: 767.98px) {
     .pages-cards:hover {
         .cards-bloc {
-            width: 85%;
+            width: 90%;
         }
     }
 }

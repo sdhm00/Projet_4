@@ -70,14 +70,15 @@ h1 {
 
 .pages-cards:hover .check {
   width: 69px;
+  margin: 0 0 0 5px;
 }
-.pages-cards:hover .cards-bloc {
-  width: 75%;
+.pages-cards:hover .price-bloc {
+  right: 84px;
 }
 
 @media (min-width: 767.98px) {
   .pages-cards:hover .cards-bloc {
-    width: 85%;
+    width: 90%;
   }
 }
 body {
@@ -341,7 +342,6 @@ body.loading .loader {
   align-items: flex-start;
   gap: 5px;
   width: 95%;
-  transition: width 0.3s ease-in-out;
 }
 
 .cards-bloc h3 {
@@ -359,6 +359,9 @@ body.loading .loader {
 .price-bloc {
   display: flex;
   justify-content: center;
+  position: absolute;
+  right: 15px;
+  transition: right 0.3s ease-in-out;
 }
 
 .price-bloc p {

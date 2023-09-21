@@ -248,6 +248,13 @@ body.loading .loader {
   font-weight: 300;
 }
 
+.heart-hover:hover .hover-vector {
+  opacity: unset;
+}
+.heart-hover:hover .heart-vector {
+  opacity: 0;
+}
+
 .heart-vector {
   font-size: 22px;
   padding: 0;
@@ -273,14 +280,6 @@ body.loading .loader {
   background-clip: content-box;
   color: transparent;
   -webkit-background-clip: text;
-  opacity: 0;
-}
-
-.hover-vector:hover {
-  opacity: unset;
-}
-
-.heart-vector:hover {
   opacity: 0;
 }
 

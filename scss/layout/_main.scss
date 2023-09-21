@@ -178,6 +178,16 @@ body.loading .loader {
     }
 }
 
+.heart-hover:hover {
+    .hover-vector {
+        opacity: unset;
+    }
+
+    .heart-vector {
+        opacity: 0;
+    }
+}
+
 .heart-vector {
     font-size: 22px;
     padding: 0;
@@ -206,13 +216,7 @@ body.loading .loader {
     opacity: 0;
 }
 
-.hover-vector:hover {
-    opacity: unset;
-}
 
-.heart-vector:hover {
-    opacity: 0;
-}
 
 .restaurants {
     margin: 17px;

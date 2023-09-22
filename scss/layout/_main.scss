@@ -242,28 +242,27 @@ body.loading .loader {
 
 .pages-cards {
     display: flex;
-    align-items: center;
     border-radius: 15px;
     border: unset;
     background-color: var(--bloc-color);
-    padding: 0 17.5px;
     box-shadow: 0px 4px 15px 0px #0000001A;
-    height: 69px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
     position: relative;
+    gap: 5px;
+    justify-content: space-between;
 }
 
 .cards-bloc {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     gap: 5px;
-    width: 95%;
-    transition: width 0.3s ease-in-out;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    transition: width 0.3s ease-in-out;
+    padding: 15px 0 15px 15px;
 }
 
 .cards-bloc h3 {
@@ -280,10 +279,11 @@ body.loading .loader {
 
 .price-bloc {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 15px;
-    transition: right 0.3s ease-in-out;
+    align-items: flex-end;
+    position: relative;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
 }
 
 .price-bloc p {
@@ -301,7 +301,7 @@ body.loading .loader {
 .page1-bloc {
     border-radius: 40px ;
     position: relative;
-    top: -45px;
+    margin: -40px 0 0 0;
     background-color: var(--main-color);
     padding: 20px;
     display: flex;

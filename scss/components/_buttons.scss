@@ -31,34 +31,26 @@
     transition: width 0.3s ease-in-out;
     display: flex;
     background-color: var(--new-color);
-    height: 69px;
     width: 0;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     border-radius: 0 15px 15px 0;
-
+    height: 100%;
     .fa-solid {
         color: var(--bloc-color);
     }
 }
 
-
-
 .pages-cards:hover {
     .check {
         width: 69px;
-        margin: 0 0 0 5px;
     }
-
     .price-bloc {
-        right: 84px;
+        transform: translateX(-69px);
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-
-    .cards-bloc {
-        width: 80%;
-    }
-
 }
 
 @media (min-width: 767.98px) {
@@ -81,6 +73,10 @@
 }
 
 @keyframes colorFill {
-    0% {opacity: 0;}
-    100% { opacity: unset;}
+    0% {
+        opacity: 0;
+    }
+    100% { 
+        opacity: unset;
+    }
 }

@@ -28,7 +28,7 @@
 .check {
     position: absolute;
     right: 0;
-    transition: width 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: flex;
     background-color: var(--new-color);
     width: 0;
@@ -37,6 +37,7 @@
     font-size: 20px;
     border-radius: 0 15px 15px 0;
     height: 100%;
+    opacity: 0;
     .fa-solid {
         color: var(--bloc-color);
     }
@@ -45,11 +46,10 @@
 .pages-cards:hover {
     .check {
         width: 69px;
+        opacity: unset;
     }
     .price-bloc {
         transform: translateX(-69px);
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }
 

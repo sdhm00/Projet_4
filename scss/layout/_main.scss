@@ -246,9 +246,6 @@ body.loading .loader {
     border: unset;
     background-color: var(--bloc-color);
     box-shadow: 0px 4px 15px 0px #0000001A;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     position: relative;
     gap: 5px;
     justify-content: space-between;
@@ -275,6 +272,9 @@ body.loading .loader {
     margin: 0;
     font-size: 15px;
     font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .price-bloc {
@@ -288,6 +288,9 @@ body.loading .loader {
 
 .price-bloc p {
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /******Page 1******/

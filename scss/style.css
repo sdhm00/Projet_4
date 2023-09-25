@@ -380,6 +380,26 @@ body.loading .loader {
   display: flex;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.pages-cards:nth-child(1) {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.pages-cards:nth-child(2) {
+  animation: fadeIn 0.7s ease-in;
+}
+
+.pages-cards:nth-child(3) {
+  animation: fadeIn 1s ease-in;
+}
+
 /******Page 1******/
 .page1-img {
   width: 100%;

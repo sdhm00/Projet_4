@@ -256,7 +256,6 @@ body.loading .loader {
     flex-direction: column;
     justify-content: center;
     gap: 5px;
-    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     padding: 15px 0 15px 15px;
@@ -285,12 +284,14 @@ body.loading .loader {
     align-items: flex-end;
     position: relative;
     padding: 15px;
-    transition: all 0.3s ease-in-out;
-    z-index: 20;
 }
 
 .price-bloc p {
     margin: 0;
+}
+
+.check-price {
+    display: flex;
 }
 
 /******Page 1******/

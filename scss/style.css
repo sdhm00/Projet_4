@@ -358,6 +358,9 @@ body.loading .loader {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .cards-bloc p {
@@ -380,9 +383,6 @@ body.loading .loader {
 
 .price-bloc p {
   margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 /******Page 1******/

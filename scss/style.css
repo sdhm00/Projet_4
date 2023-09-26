@@ -52,6 +52,24 @@ h1 {
   opacity: 0.9;
 }
 
+.heart-hover:hover {
+  animation: colorFill 2s ease-in-out;
+}
+.heart-hover:hover .hover-vector {
+  opacity: unset;
+}
+.heart-hover:hover .heart-vector {
+  opacity: 0;
+}
+
+@keyframes colorFill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: unset;
+  }
+}
 .check {
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -75,24 +93,6 @@ h1 {
 @media (min-width: 767.98px) {
   .pages-cards:hover .cards-bloc {
     width: 90%;
-  }
-}
-.heart-hover:hover {
-  animation: colorFill 2s ease-in-out;
-}
-.heart-hover:hover .hover-vector {
-  opacity: unset;
-}
-.heart-hover:hover .heart-vector {
-  opacity: 0;
-}
-
-@keyframes colorFill {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: unset;
   }
 }
 /******Loader******/
@@ -308,6 +308,7 @@ body.loading .loader {
   margin: 0;
 }
 
+/******Page resto******/
 .h2-box {
   font-size: 16px;
   font-weight: 300;
@@ -400,7 +401,6 @@ body.loading .loader {
   animation: fadeIn 1s ease-in;
 }
 
-/******Page 1******/
 .page1-img {
   width: 100%;
   height: 275px;

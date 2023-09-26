@@ -23,7 +23,25 @@
     }
 }
 
+.heart-hover:hover {
+    animation: colorFill 2s ease-in-out;
+    .hover-vector {
+        opacity: unset;
+    }
 
+    .heart-vector {
+        opacity: 0;
+    }
+}
+
+@keyframes colorFill {
+    0% {
+        opacity: 0;
+    }
+    100% { 
+        opacity: unset;
+    }
+}
 
 .check {
     transition: all 0.3s ease-in-out;
@@ -55,22 +73,3 @@
     }
 }
 
-.heart-hover:hover {
-    animation: colorFill 2s ease-in-out;
-    .hover-vector {
-        opacity: unset;
-    }
-
-    .heart-vector {
-        opacity: 0;
-    }
-}
-
-@keyframes colorFill {
-    0% {
-        opacity: 0;
-    }
-    100% { 
-        opacity: unset;
-    }
-}
